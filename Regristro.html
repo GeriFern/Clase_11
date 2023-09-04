@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/style-registro.css">
+</head>
+<body>
+    <p class="titulo1">20% de descuento en todos los productos!</p>
+    <div class="logo">
+        <img src="./img/Imagen1.png" alt="">
+        <h1>Nombre Tienda</h1>
+    </div>
+    <nav>
+        <a href="#">Contacto</a>
+        <a href="#">Registrarme</a>
+        <a href="#">Ingresar</a>
+    </nav>
+
+    <section class="registro-container">
+        <div class="titulo">
+            <h1>Añadí tu super!</h1>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+        </div>
+        
+        <form action="" method="post">
+            <div class="formulario">
+                <div class="columna-1">
+                    <div class="input-nombre">
+                        <label for="name">*Nombre</label>
+                        <input class="inp" type="text" name="nombre" id="name">
+                    </div>
+                    <div class="input-fecha">
+                        <label for="date">Fecha</label>
+                        <input class="inp" type="date" name="fecha" id="date" max="2023-12-31">
+                    </div>
+                    <div class="descripcion">
+                        <textarea class="inp" name="text-area" id="text-area" cols="30" rows="10" placeholder="Descripción"></textarea>
+                    </div>
+                </div>
+   
+                <div class="columna-2">
+                    <div class="input-especie">
+                        <label for="especie">*Especie</label>
+                        <select name="select-especie" id="especie" class="in">
+                            <option value="es">Seleccionar Especie</option>
+                            <option value="es">Especie</option>
+                            <option value="an">Animales</option>
+                        </select>
+                    </div>
+                    <div class="input-file">
+                        <label for="foto">Agregar Foto</label>
+                        <input class="inp" type="file" name="agregar-foto" id="foto">
+                    </div>  
+                    <div class="poderes">
+                        <legend>Poderes</legend>
+                        <div>
+                            <label for="vol">
+                                <input class="inp" type="checkbox" name="volar" id="vol">
+                            Volar</label><br>
+                            
+                        </div>
+                        <div>
+                            <label for="super">
+                                <input class="inp" type="checkbox" name="super-inteligencia" id="super">
+                            SuperInteligencia</label>
+                            
+                        </div>
+                        <div>
+                            <label for="vista">
+                                <input class="inp" type="checkbox" name="vista-laser" id="vista">
+                            Vista de rayo láser</label><br>
+                        </div>
+                        
+                        <div>
+                            <label for="billetera">
+                                <input class="inp" type="checkbox" name="billetera-gorda" id="billetera"> 
+                            Billetera gorda</label>
+                        </div>
+                    </div> 
+                    <hr>
+                    <div class="tipo">
+                        <legend>Tipo de personaje</legend>
+                        <div>
+                            <label for="her">
+                                <input class="inp" type="radio" name="heroe" id="her">
+                            Héroe / Heroina</label> 
+                            
+                        </div>
+                        <div>
+                            <label for="vil">
+                                <input class="inp" type="radio" name="villano" id="vil">
+                            villano / villana</label>
+                            
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <button type="submit">Añadir</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
